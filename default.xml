@@ -51,4 +51,7 @@
   <include name="aospa.xml"/>
   <include name="obsolete.xml"/>
 
+  <!-- LineageOS -->
+  <include name="lineage.xml"/>
+
 </manifest>
