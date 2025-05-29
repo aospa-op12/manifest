@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Packages (May ASB) -->
+  <remove-project name="platform/packages/modules/Wifi" />
+  <project path="packages/modules/Wifi" name="aospa-op12/android_packages_modules_Wifi" remote="aospa" />
+
+</manifest>

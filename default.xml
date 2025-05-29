@@ -54,4 +54,10 @@
   <!-- LineageOS -->
   <include name="lineage.xml"/>
 
+  <!-- OnePlus 12 -->
+  <include name="op12.xml"/>
+
+  <!-- ASB -->
+  <include name="asb.xml"/>
+
 </manifest>
