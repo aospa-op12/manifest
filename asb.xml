@@ -17,7 +17,7 @@
   <remove-project name="platform/packages/modules/AppSearch" />
   <project path="packages/modules/AppSearch" name="aospa-op12/android_packages_modules_AppSearch" remote="aospa" />
   <remove-project name="AOSPA/android_packages_modules_Bluetooth" />
-  <project path="packages/modules/Bluetooth" name="aospa-op12/android_packages_modules_Bluetooth" remote="aospa" />
+  <project path="packages/modules/Bluetooth" name="aospa-op12/android_packages_modules_Bluetooth" remote="aospa" revision="vauxite-lhdc" />
   <remove-project name="platform/packages/modules/CellBroadcastService" />
   <project path="packages/modules/CellBroadcastService" name="aospa-op12/android_packages_modules_CellBroadcastService" remote="aospa" />
   <remove-project name="platform/packages/modules/IntentResolver" />

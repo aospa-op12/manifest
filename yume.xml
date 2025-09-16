@@ -21,7 +21,7 @@
   <remove-project name="AOSPA/android_art" />
   <project path="art" name="aospa-op12/android_art" remote="aospa" />
   <remove-project name="AOSPA/android_bionic" />
-  <project path="bionic" name="aospa-op12/android_bionic" remote="aospa" />
+  <project path="bionic" name="aospa-op12/android_bionic" remote="aospa" revision="vauxite-lhdc" />
 
   <!-- Device -->
   <remove-project name="AOSPA/android_device_qcom_common" />
@@ -51,9 +51,13 @@
   <remove-project name="AOSPA/android_frameworks_av" />
   <project path="frameworks/av" name="aospa-op12/android_frameworks_av" remote="aospa" />
   <remove-project name="AOSPA/android_frameworks_base" />
-  <project path="frameworks/base" name="aospa-op12/android_frameworks_base" remote="aospa" />
+  <project path="frameworks/base" name="aospa-op12/android_frameworks_base" remote="aospa" revision="vauxite-lhdc" />
   <remove-project name="AOSPA/android_frameworks_native" />
   <project path="frameworks/native" name="aospa-op12/android_frameworks_native" remote="aospa" />
+
+  <!-- Hardware (LineageOS) -->
+  <remove-project name="AOSPA/android_hardware_interfaces" />
+  <project path="hardware/interfaces" name="aospa-op12/android_hardware_interfaces" remote="aospa" />
 
   <!-- Hardware (LineageOS) -->
   <project path="hardware/lineage/interfaces" name="aospa-op12/android_hardware_lineage_interfaces" remote="aospa" />
@@ -72,7 +76,7 @@
 
   <!-- Packages -->
   <remove-project name="AOSPA/android_packages_apps_Settings" />
-  <project path="packages/apps/Settings" name="aospa-op12/android_packages_apps_Settings" remote="aospa" />
+  <project path="packages/apps/Settings" name="aospa-op12/android_packages_apps_Settings" remote="aospa" revision="vauxite-lhdc" />
 
   <!-- System -->
   <remove-project name="AOSPA/android_system_core" />
@@ -99,5 +103,9 @@
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="aospa-op12/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="aospa" />
   <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
   <project path="vendor/qcom/opensource/usb" name="aospa-op12/android_vendor_qcom-opensource_usb" remote="aospa" />
+
+  <!-- Vendor (Savitech) -->
+  <project path="external/liblhdc" name="aospa-op12/android_external_liblhdc" remote="aospa" />
+  <project path="vendor/savitech/lhdc" name="TheXPerienceProject/android_vendor_savitech_lhdc" remote="github" revision="xpe-19.0-qpr1" />
 
 </manifest>
