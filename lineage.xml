@@ -5,6 +5,7 @@
   <remove-project name="AOSPA/android_kernel_build" />
 
   <!-- Packages -->
+  <project path="packages/apps/SimpleSettingsConfig" name="LineageOS/android_packages_apps_SimpleSettingsConfig" remote="github" revision="lineage-22.2" />
   <remove-project name="platform/packages/services/DeviceAsWebcam" />
   <project path="packages/services/DeviceAsWebcam" name="LineageOS/android_packages_services_DeviceAsWebcam" remote="github" revision="lineage-22.2" />
 
