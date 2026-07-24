@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Build -->
+  <remove-project name="AOSPA/android_build" />
+  <project path="build/make" name="aospa-pipa/android_build" remote="aospa" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <!-- Core -->
+  <remove-project name="AOSPA/android_bionic" />
+  <project path="bionic" name="aospa-pipa/android_bionic" remote="aospa" />
+
+  <!-- External -->
+  <project path="external/json-c" name="platform/external/json-c" remote="clo-la" revision="44413d7813a4dfbdd99c81ed3b1ff420ec273045" />
+
+  <!-- Frameworks -->
+  <remove-project name="AOSPA/android_frameworks_av" />
+  <project path="frameworks/av" name="aospa-op12/android_frameworks_av" remote="aospa" />
+  <remove-project name="AOSPA/android_frameworks_base" />
+  <project path="frameworks/base" name="aospa-op12/android_frameworks_base" remote="aospa" />
+  <remove-project name="AOSPA/android_frameworks_native" />
+  <project path="frameworks/native" name="aospa-op12/android_frameworks_native" remote="aospa" />
+
+  <!-- Hardware -->
+  <remove-project name="AOSPA/android_hardware_interfaces" />
+  <project path="hardware/interfaces" name="aospa-pipa/android_hardware_interfaces" remote="aospa" />
+
+  <!-- Packages -->
+  <remove-project name="AOSPA/android_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="aospa-pipa/android_packages_apps_Settings" remote="aospa" />
+  <remove-project name="AOSPA/android_packages_modules_Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="aospa-pipa/android_packages_modules_Bluetooth" remote="aospa" />
+  <remove-project name="AOSPA/android_packages_modules_Connectivity" />
+  <project path="packages/modules/Connectivity" name="aospa-pipa/android_packages_modules_Connectivity" remote="aospa" />
+  <remove-project name="AOSPA/android_packages_services_Telecomm" />
+  <project path="packages/services/Telecomm" name="aospa-pipa/android_packages_services_Telecomm" remote="aospa" />
+
+  <!-- System -->
+  <remove-project name="AOSPA/android_system_core" />
+  <project path="system/core" name="aospa-pipa/android_system_core" remote="aospa" />
+  <remove-project name="AOSPA/android_system_fs_fs_mgr" />
+  <project path="system/fs/fs_mgr" name="aospa-pipa/android_system_fs_fs_mgr" remote="aospa" />
+  <remove-project name="AOSPA/android_system_media" />
+  <project path="system/media" name="aospa-pipa/android_system_media" remote="aospa" />
+  <remove-project name="platform/system/memory/libmeminfo" />
+  <project path="system/memory/libmeminfo" name="aospa-pipa/android_system_memory_libmeminfo" remote="aospa" />
+  <remove-project name="AOSPA/android_system_memory_lmkd" />
+  <project path="system/memory/lmkd" name="aospa-pipa/android_system_memory_lmkd" remote="aospa" />
+
+  <!-- Vendor (QCOM QSSI) -->
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_bluetooth-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth" name="aospa-pipa/android_vendor_qcom-opensource_bluetooth-commonsys" remote="aospa" />
+  <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="aospa-pipa/android_vendor_qcom_opensource_commonsys-intf_display" remote="aospa" />
+
+</manifest>
