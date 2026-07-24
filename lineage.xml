@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Remove -->
+  <remove-project name="platform/packages/apps/Calendar" />
+  <remove-project name="platform/packages/services/DeviceAsWebcam" />
+  <remove-project name="AOSPA/android_prebuilts_extract-tools" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Camelot" name="LineageOS/android_packages_apps_Camelot" remote="github" revision="lineage-24.0" />
+  <project path="packages/apps/Canvas" name="LineageOS/android_packages_apps_Canvas" remote="github" revision="lineage-24.0" />
+  <project path="packages/apps/Etar" name="LineageOS/android_packages_apps_Etar" remote="github" revision="lineage-24.0" />
+  <project path="packages/apps/Glimpse" name="LineageOS/android_packages_apps_Glimpse" remote="github" revision="lineage-24.0" />
+  <project path="packages/apps/Recorder" name="LineageOS/android_packages_apps_Recorder" remote="github" revision="lineage-24.0" />
+  <project path="packages/apps/Twelve" name="LineageOS/android_packages_apps_Twelve" remote="github" revision="lineage-24.0" />
+  <project path="packages/services/DeviceAsWebcam" name="LineageOS/android_packages_services_DeviceAsWebcam" remote="github" revision="lineage-24.0" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" remote="github" revision="lineage-24.0" />
+
+</manifest>
