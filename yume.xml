@@ -3,7 +3,7 @@
 
   <!-- Build -->
   <remove-project name="AOSPA/android_build" />
-  <project path="build/make" name="aospa-pipa/android_build" remote="aospa" >
+  <project path="build/make" name="aospa-op12/android_build" remote="aospa" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -23,7 +23,7 @@
   <remove-project name="AOSPA/android_kernel_configs" />
   <project path="kernel/configs" name="aospa-pipa/android_kernel_configs" remote="aospa" />
   <remove-project name="AOSPA/android_device_qcom_common" />
-  <project path="device/qcom/common" name="aospa-pipa/android_device_qcom_common" remote="aospa" >
+  <project path="device/qcom/common" name="aospa-op12/android_device_qcom_common" remote="aospa" >
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
   <remove-project name="AOSPA/android_device_qcom_sepolicy_vndr" />
@@ -40,6 +40,8 @@
   <!-- Hardware -->
   <remove-project name="AOSPA/android_hardware_interfaces" />
   <project path="hardware/interfaces" name="aospa-pipa/android_hardware_interfaces" remote="aospa" />
+  <remove-project name="AOSPA/android_hardware_qcom_thermal" />
+  <project path="vendor/qcom/opensource/thermal-hal" name="aospa-op12/android_hardware_qcom_thermal" remote="aospa" />
 
   <!-- Packages -->
   <project path="packages/apps/FlipFlap" name="aospa-pipa/android_packages_apps_FlipFlap" remote="aospa" />
@@ -63,7 +65,7 @@
   <remove-project name="android_vendor_google_pixel" />
   <project path="vendor/google/pixel" name="aospa-pipa/android_vendor_google_pixel" remote="aospa" clone-depth="1" />
   <remove-project name="AOSPA/android_vendor_aospa" />
-  <project path="vendor/aospa" name="aospa-pipa/android_vendor_aospa" remote="aospa" >
+  <project path="vendor/aospa" name="aospa-op12/android_vendor_aospa" remote="aospa" >
     <linkfile src="build.sh" dest="rom-build.sh" />
   </project>
   <remove-project name="AOSPA/android_vendor_aospa_translations" />
@@ -72,6 +74,7 @@
   <!-- Vendor (QCOM) -->
   <remove-project name="platform/vendor/qcom-opensource/core-utils-vendor" />
   <project path="vendor/qcom/opensource/core-utils-vendor" name="aospa-pipa/android_vendor_qcom_opensource_core-utils-vendor" remote="aospa" />
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
   <remove-project name="platform/vendor/qcom-opensource/healthd-ext" />
   <project path="vendor/qcom/opensource/healthd-ext" name="aospa-pipa/android_vendor_qcom_opensource_healthd-ext" remote="aospa" >
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/health_product.mk" src="health-vendor-product.mk" />
@@ -80,5 +83,7 @@
   <project path="vendor/qcom/opensource/power" name="aospa-pipa/android_vendor_qcom-opensource_power" remote="aospa" />
   <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
   <project path="vendor/qcom/opensource/usb" name="aospa-pipa/android_vendor_qcom-opensource_usb" remote="aospa" />
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_vibrator" />
+  <project path="vendor/qcom/opensource/vibrator" name="aospa-op12/android_vendor_qcom-opensource_vibrator" remote="aospa" />
 
 </manifest>
