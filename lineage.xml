@@ -2,9 +2,11 @@
 <manifest>
 
   <!-- Remove -->
+  <remove-project name="platform/packages/apps/Calendar" />
   <remove-project name="AOSPA/android_prebuilts_extract-tools" />
 
   <!-- Packages -->
+  <project path="packages/apps/Etar" name="LineageOS/android_packages_apps_Etar" remote="github" revision="lineage-24.0" />
   <project path="packages/apps/Twelve" name="LineageOS/android_packages_apps_Twelve" remote="github" revision="lineage-24.0" />
 
   <!-- Prebuilts -->
